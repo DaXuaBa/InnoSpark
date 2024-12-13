@@ -1,24 +1,31 @@
-import { Button } from 'flowbite-react';
+import { Button } from "flowbite-react";
 
 export default function CallToAction() {
-  return (
-    <div className='flex flex-col sm:flex-row p-3 border border-teal-500 justify-center items-center rounded-tl-3xl rounded-br-3xl text-center'>
-        <div className="flex-1 justify-center flex flex-col">
-            <h2 className='text-2xl'>
-                Want to learn more about JavaScript?
-            </h2>
-            <p className='text-gray-500 my-2'>
-                Checkout these resources with 100 JavaScript Projects
-            </p>
-            <Button gradientDuoTone='purpleToPink' className='rounded-tl-xl rounded-bl-none'>
-                <a href="https://daxuaba.site/" target='_blank' rel='noopener noreferrer'>
-                    100 JavaScript Projects
-                </a>
-            </Button>
+    return (
+        <div className="flex flex-col sm:flex-row p-3 border border-red-500 justify-center items-center rounded-tl-3xl rounded-br-3xl text-center">
+            <div className="flex-1 justify-center flex flex-col">
+                <h2 className="text-2xl">
+                    Muốn biết nhiều hơn về Viettel Post?
+                </h2>
+                <p className="text-gray-500 my-2">
+                    Hãy vào Google! Chứ đừng tìm ở đây.
+                </p>
+                <Button
+                    gradientDuoTone="pinkToOrange"
+                    className="w-70 mx-auto rounded-tl-xl rounded-bl-none rounded-br-xl rounded-tr-none"
+                >
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100085009712661"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Khám Phá Viettel Post Tân Biên
+                    </a>
+                </Button>
+            </div>
+            <div className="p-7 flex-1">
+                <img src="theme.png" />
+            </div>
         </div>
-        <div className="p-7 flex-1">
-            <img src="https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg" />
-        </div>
-    </div>
-  )
+    );
 }
